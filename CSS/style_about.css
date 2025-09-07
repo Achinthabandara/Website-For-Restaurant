@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap');
+
+body {
+    background-color: #FFFDD0;
+    color: #5D4037;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+   
+}
+
+/* NAVIGATION BAR */
+
+
+nav {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    position: fixed;    
+    top: 0;
+    z-index: 1000;
+    right: 0;
+    left: 0;
+    background: rgba(15, 12, 12, 0.514);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) ;  
+    padding: 5px 20px;
+    transition: background-color 0.3s ease;
+  
+    
+}
+
+.scrolled {
+    background-color: #000; 
+}
+
+
+.links nav .logo img {
+   
+    width: 80px;
+    cursor: pointer;
+    margin-right: 500px;
+       
+}
+    
+
+            
+.links {
+    
+   
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 30px;
+} 
+
+
+
+section nav ul {
+    list-style: none;
+   
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 15px; 
+  
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    transition: 0.1s;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+   
+}
+
+
+section nav ul li a::after {
+    content: "";
+    width: 100%; 
+    height: 2px;
+    background: gold;
+    transition: 0.2s linear;
+  
+}
+
+li a:hover::after {
+    width: 100%;
+    
+}
+
+li a:hover, .mobile ul li:hover {
+    color: gold;
+}
+
+.icons {
+    font-size: 17px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: gold;
+}
+
+
+
+.about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_main img {
+    width: 500px;
+    height: auto;
+
+    position: relative;
+    top: 30px;
+    left: 20px;
+    bottom: 100px;
+
+}
+
+
+
+.about_text h3 {
+    font-size: 60px;
+    margin: 150px 0 50px 0;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.about_text p {
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 32px;
+    font-size: 1rem;
+    
+}
+
+.our_values {
+    text-align: center;
+    margin-top: 10px;
+    background: #000;
+    color: white;
+    padding: 20px;
+    font-family: 'Cormorant Garamond';
+    font-size: 32px;
+}
+
+.our_values span {
+    font-family: "Dancing Script", cursive;
+    color: gold;
+}
+
+/*  VALUE CARDS */
+
+main {
+   
+   
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+   
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    scroll-margin-top: 8rem;
+    width:min(100%, 350px);
+    background-color: whitesmoke;
+    border: 2px solid #FFd700;
+    border-radius: 15px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.card:hover {
+    transform:skewY(10.2s);
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card h1 {
+    font-family: "Ruge Boogie", serif;
+    color: #000;
+    font-size: 2.4rem;
+}
+
+.gallery {
+    padding-bottom: 100px;
+}
+
+.all_images .img1 img {
+    width: 449px;
+    left: 0;
+}
+.all_images .img2 img {
+    width: 450px;
+    left: 0;
+}
+.all_images .img3 img {
+    width: 449px;
+    left: 0;
+}
+
+ 
+ .all_images {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+
+}
+
+footer {
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* BOTTOM */
+
+.bottom {
+   
+    margin-bottom: 40px; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+   
+}
+
+.bottom a {
+    color: #FFA500;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0%;
+    text-decoration: none;
+}
+
+.email {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'cinzel', serif;
+    padding-left: 50px;
+}
+
+
+
+.whtsapp {
+    padding-left: 70px;
+    color: #fff;
+    font-family: 'cinzel', serif;
+    font-size: 25px;
+}
+
+
+
+.open-time {
+    margin: 0 40px;
+    margin-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, .1);
+    padding: 25px 0;
+    color: #fff;
+    font-family: 'cinzel', serif;
+    font-size: 2rem;
+}
+
+.open-time .p1 {
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.social-links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    size: 100px;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+    border-left: 2px solid #fff; 
+    border-right: 2px solid #fff;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+   margin-right: 300px;
+}
